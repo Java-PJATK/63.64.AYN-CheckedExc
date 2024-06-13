@@ -97,4 +97,3 @@ assert boolExp : message;
 At runtime, the value of `boolExp` is evaluated and if found false, the program will print the `message` and terminate by throwing an exception of type `AssertionError`.
 
 In our example, this is what will happen when the file is missing and the variable `scfile` is null. By default, assertions are disabled at runtime, but can be enabled by `-ea` switch when running a program. Because assertions are sometimes on and sometimes off, there should be no side effects of using them. Normally, assertions check conditions that we are almost sure should always hold. If, however, the condition is not met, and an unchecked exception of type `AssertionError` is thrown, we should never even try to handle it, because it indicates a serious flaw in the program that just must be corrected.
-```
